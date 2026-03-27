@@ -341,30 +341,34 @@ h2 {
 /* ============================================ */
 
 form {
-  max-width: 600px;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: bold;
   color: #2c3e50;
+  font-size: 15px;
+  letter-spacing: 0.5px;
 }
 
 input[type="text"],
 input[type="file"],
 textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #bdc3c7;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
-  transition: border-color 0.3s;
+  transition: all 0.3s;
+  background-color: #f8f9fa;
 }
 
 input[type="text"]:focus,
@@ -372,28 +376,37 @@ input[type="file"]:focus,
 textarea:focus {
   outline: none;
   border-color: #3498db;
-  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+  transform: translateY(-2px);
 }
 
 textarea {
   resize: vertical;
-  min-height: 150px;
+  min-height: 140px;
 }
 
 .btn-submit {
-  background-color: #27ae60;
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
   color: white;
-  padding: 12px 30px;
+  padding: 14px 40px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+  width: 100%;
 }
 
 .btn-submit:hover {
-  background-color: #229954;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(39, 174, 96, 0.5);
+}
+
+.btn-submit:active {
+  transform: translateY(-1px);
 }
 
 /* ============================================ */

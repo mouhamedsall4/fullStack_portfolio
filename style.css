@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
+  padding-top: 92px;
 }
 
 /* ============================================ */
@@ -28,8 +29,10 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
 }
 
@@ -519,6 +522,10 @@ footer {
 /* ============================================ */
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 84px;
+  }
+
   .site-topbar {
     flex-wrap: wrap;
     padding: 15px 20px;

@@ -7,80 +7,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ENTÊTE ET NAVIGATION -->
-    <header>
-        <h1>📂 Mon Portfolio</h1>
-        <div class="hamburger">
+    <header class="site-topbar">
+        <a class="brand" href="lister-projets.html">
+            <span class="brand-title">Mon Portfolio</span>
+        </a>
+
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="lister-projets.html">Accueil</a></li>
+                <li><a class="is-current" href="ajouter-projet.html">Ajouter un projet</a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="lister-projets.html">🏠 Accueil</a></li>
-            <li><a href="ajouter-projet.html">➕ Ajouter un Projet</a></li>
-        </ul>
-    </nav>
-
-    <!-- CONTENU PRINCIPAL -->
     <main>
         <div class="container">
             <h2>Ajouter un Nouveau Projet</h2>
-            
+
             <form method="POST" enctype="multipart/form-data">
-                <!-- Libellé du projet -->
                 <div class="form-group">
-                    <label for="libelle">Libellé du projet :</label>
+                    <label for="libelle">Libelle du projet :</label>
                     <input type="text" id="libelle" name="libelle" required placeholder="Exemple : Site E-commerce">
                 </div>
 
-                <!-- Description du projet -->
                 <div class="form-group">
                     <label for="description">Description :</label>
-                    <textarea id="description" name="description" required placeholder="Décrivez votre projet en détail..."></textarea>
+                    <textarea id="description" name="description" required placeholder="Decrivez votre projet en detail..."></textarea>
                 </div>
 
-                <!-- Image du projet -->
                 <div class="form-group">
                     <label for="image">Image du projet :</label>
                     <input type="file" id="image" name="image" accept="image/*" required>
                 </div>
 
-                <!-- Technologies utilisées -->
                 <div class="form-group">
-                    <label for="technologies">Technologies utilisées :</label>
-                    <textarea id="technologies" name="technologies" required placeholder="Exemple : HTML, CSS, JavaScript, React, Express, MongoDB (séparées par des virgules)"></textarea>
+                    <label for="technologies">Technologies utilisees :</label>
+                    <textarea id="technologies" name="technologies" required placeholder="Exemple : HTML, CSS, JavaScript, React, Express, MongoDB"></textarea>
                 </div>
 
-                <!-- Bouton Soumettre -->
                 <div class="form-group">
-                    <button type="submit" class="btn-submit">💾 Ajouter le Projet</button>
+                    <button type="submit" class="btn-submit">Ajouter le projet</button>
                 </div>
             </form>
         </div>
     </main>
 
-    <!-- PIED DE PAGE -->
     <footer>
         <div class="footer-content">
-            <!-- À propos -->
             <div class="footer-section">
-                <h3>À propos</h3>
-                <p>Bienvenue sur mon portfolio. Je suis passionné par le développement web et les technologies modernes.</p>
+                <h3>A propos</h3>
+                <p>Bienvenue sur mon portfolio. Je suis passionne par le developpement web et les technologies modernes.</p>
                 <div class="social-links">
-                    <a href="https://github.com" title="GitHub">🐙</a>
-                    <a href="https://linkedin.com" title="LinkedIn">💼</a>
-                    <a href="https://twitter.com" title="Twitter">🐦</a>
-                    <a href="mailto:dev@portfolio.com" title="Email">✉️</a>
+                    <a href="https://github.com" title="GitHub">GitHub</a>
+                    <a href="https://linkedin.com" title="LinkedIn">LinkedIn</a>
+                    <a href="https://twitter.com" title="Twitter">Twitter</a>
+                    <a href="mailto:dev@portfolio.com" title="Email">Email</a>
                 </div>
             </div>
 
-            <!-- Technologies -->
             <div class="footer-section">
                 <h3>Technologies</h3>
-                <p>Mon stack de développement :</p>
+                <p>Mon stack de developpement :</p>
                 <div class="technologies-logos">
                     <div class="tech-logo">HTML</div>
                     <div class="tech-logo">CSS</div>
@@ -91,19 +84,18 @@
                 </div>
             </div>
 
-            <!-- Liens rapides -->
             <div class="footer-section">
                 <h3>Liens rapides</h3>
                 <a href="lister-projets.html">Mes Projets</a>
                 <a href="ajouter-projet.html">Ajouter un Projet</a>
                 <a href="#contact">Me contacter</a>
-                <a href="#mentions">Mentions légales</a>
+                <a href="#mentions">Mentions legales</a>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Mon Portfolio. Tous les droits réservés.</p>
-            <p>Créé avec HTML, CSS et passion ❤️</p>
+            <p>&copy; 2026 Mon Portfolio. Tous les droits reserves.</p>
+            <p>Cree avec HTML, CSS et passion.</p>
         </div>
     </footer>
 

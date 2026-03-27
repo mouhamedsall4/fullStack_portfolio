@@ -1,31 +1,53 @@
-// Gérer le menu hamburger
-document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.querySelector('.hamburger');
-  const nav = document.querySelector('nav');
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector(".site-nav");
 
-  // Ouvrir/fermer le menu
-  hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('active');
-    nav.classList.toggle('active');
+  if (!hamburger || !nav) {
+    return;
+  }
+
+  const isMobile = function() {
+    return window.innerWidth <= 768;
+  };
+
+  const setMenuState = function(isOpen) {
+    hamburger.classList.toggle("active", isOpen);
+    nav.classList.toggle("active", isOpen);
+    hamburger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  };
+
+  hamburger.addEventListener("click", function() {
+    if (!isMobile()) {
+      return;
+    }
+
+    setMenuState(!hamburger.classList.contains("active"));
   });
 
-  // Fermer le menu quand on clique sur un lien
-  const navLinks = document.querySelectorAll('nav a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      hamburger.classList.remove('active');
-      nav.classList.remove('active');
+  document.querySelectorAll(".site-nav a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      if (isMobile()) {
+        setMenuState(false);
+      }
     });
   });
 
-  // Fermer le menu quand on clique ailleurs
-  document.addEventListener('click', function(event) {
-    const isClickInsideNav = nav.contains(event.target);
-    const isClickInsideHamburger = hamburger.contains(event.target);
-    
-    if (!isClickInsideNav && !isClickInsideHamburger && hamburger.classList.contains('active')) {
-      hamburger.classList.remove('active');
-      nav.classList.remove('active');
+  document.addEventListener("click", function(event) {
+    if (!isMobile()) {
+      return;
+    }
+
+    const clickInsideNav = nav.contains(event.target);
+    const clickInsideHamburger = hamburger.contains(event.target);
+
+    if (!clickInsideNav && !clickInsideHamburger && hamburger.classList.contains("active")) {
+      setMenuState(false);
+    }
+  });
+
+  window.addEventListener("resize", function() {
+    if (!isMobile()) {
+      setMenuState(false);
     }
   });
 });

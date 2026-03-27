@@ -3,50 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Détail Projet</title>
+    <title>Portfolio - Detail Projet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ENTÊTE ET NAVIGATION -->
-    <header>
-        <h1>📂 Mon Portfolio</h1>
-        <div class="hamburger">
+    <header class="site-topbar">
+        <a class="brand" href="lister-projets.html">
+            <span class="brand-title">Mon Portfolio</span>
+        </a>
+
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a class="is-current" href="lister-projets.html">Accueil</a></li>
+                <li><a href="ajouter-projet.html">Ajouter un projet</a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="lister-projets.html">🏠 Accueil</a></li>
-            <li><a href="ajouter-projet.html">➕ Ajouter un Projet</a></li>
-        </ul>
-    </nav>
-
-    <!-- CONTENU PRINCIPAL -->
     <main>
         <div class="container">
-            <h2>Détail du Projet</h2>
-            
+            <h2>Detail du Projet</h2>
+
             <div class="projet-detail">
-                <!-- Image du projet -->
                 <img src="https://via.placeholder.com/400x300?text=Site+E-commerce" alt="Site E-commerce">
-                
-                <!-- Informations du projet -->
+
                 <div class="projet-info">
                     <h3>Site E-commerce</h3>
-                    
+
                     <strong>Description :</strong>
                     <p>
-                        Un site de commerce électronique complet permettant aux utilisateurs de parcourir un catalogue 
-                        de produits, d'ajouter des articles à leur panier et de procéder au paiement. 
-                        Le site dispose d'un système d'authentification, d'une gestion des commandes et d'un 
+                        Un site de commerce electronique complet permettant aux utilisateurs de parcourir un catalogue
+                        de produits, d'ajouter des articles a leur panier et de proceder au paiement.
+                        Le site dispose d'un systeme d'authentification, d'une gestion des commandes et d'un
                         tableau de bord administrateur.
                     </p>
-                    
+
                     <div class="technologies">
-                        <strong>Technologies utilisées :</strong>
+                        <strong>Technologies utilisees :</strong>
                         <ol>
                             <li>HTML5</li>
                             <li>CSS3</li>
@@ -58,43 +57,40 @@
                         </ol>
                     </div>
 
-                    <strong>Fonctionnalités :</strong>
+                    <strong>Fonctionnalites :</strong>
                     <p>
-                        • Authentification utilisateur<br>
-                        • Catalogue de produits<br>
-                        • Panier d'achat<br>
-                        • Système de paiement<br>
-                        • Gestion des commandes<br>
-                        • Dashboard administrateur
+                        Authentification utilisateur<br>
+                        Catalogue de produits<br>
+                        Panier d'achat<br>
+                        Systeme de paiement<br>
+                        Gestion des commandes<br>
+                        Dashboard administrateur
                     </p>
 
                     <div class="liens-action">
-                        <a href="lister-projets.html" class="btn-retour">← Retour à la liste</a>
+                        <a href="lister-projets.html" class="btn-retour">Retour a la liste</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- PIED DE PAGE -->
     <footer>
         <div class="footer-content">
-            <!-- À propos -->
             <div class="footer-section">
-                <h3>À propos</h3>
-                <p>Bienvenue sur mon portfolio. Je suis passionné par le développement web et les technologies modernes.</p>
+                <h3>A propos</h3>
+                <p>Bienvenue sur mon portfolio. Je suis passionne par le developpement web et les technologies modernes.</p>
                 <div class="social-links">
-                    <a href="https://github.com" title="GitHub">🐙</a>
-                    <a href="https://linkedin.com" title="LinkedIn">💼</a>
-                    <a href="https://twitter.com" title="Twitter">🐦</a>
-                    <a href="mailto:dev@portfolio.com" title="Email">✉️</a>
+                    <a href="https://github.com" title="GitHub">GitHub</a>
+                    <a href="https://linkedin.com" title="LinkedIn">LinkedIn</a>
+                    <a href="https://twitter.com" title="Twitter">Twitter</a>
+                    <a href="mailto:dev@portfolio.com" title="Email">Email</a>
                 </div>
             </div>
 
-            <!-- Technologies -->
             <div class="footer-section">
                 <h3>Technologies</h3>
-                <p>Mon stack de développement :</p>
+                <p>Mon stack de developpement :</p>
                 <div class="technologies-logos">
                     <div class="tech-logo">HTML</div>
                     <div class="tech-logo">CSS</div>
@@ -105,19 +101,18 @@
                 </div>
             </div>
 
-            <!-- Liens rapides -->
             <div class="footer-section">
                 <h3>Liens rapides</h3>
                 <a href="lister-projets.html">Mes Projets</a>
                 <a href="ajouter-projet.html">Ajouter un Projet</a>
                 <a href="#contact">Me contacter</a>
-                <a href="#mentions">Mentions légales</a>
+                <a href="#mentions">Mentions legales</a>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Mon Portfolio. Tous les droits réservés.</p>
-            <p>Créé avec HTML, CSS et passion ❤️</p>
+            <p>&copy; 2026 Mon Portfolio. Tous les droits reserves.</p>
+            <p>Cree avec HTML, CSS et passion.</p>
         </div>
     </footer>
 

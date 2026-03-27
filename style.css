@@ -451,3 +451,52 @@ footer {
 .footer-bottom p {
   margin: 5px 0;
 }
+
+/* ============================================ */
+/* DESIGN RESPONSIVE */
+/* ============================================ */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+    margin-top: -50px;
+  }
+
+  nav {
+    position: static;
+    max-height: 0;
+  }
+
+  nav.active {
+    max-height: 300px;
+  }
+
+  .projets-grid {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projet-detail {
+    flex-direction: column;
+  }
+
+  .projet-detail img {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}

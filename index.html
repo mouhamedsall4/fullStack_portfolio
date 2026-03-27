@@ -29,12 +29,32 @@
 
     <main class="wrapper">
         <section class="hero">
-            <p class="eyebrow">Portfolio developpeur</p>
-            <h1>Des projets full stack presentes de maniere simple et claire.</h1>
-            <p class="hero-copy">
-                Cette page rassemble quelques realisations avec une navigation simple,
-                une mise en page responsive et une structure claire pour la demonstration.
-            </p>
+            <div class="hero-copy-block">
+                <p class="eyebrow">Portfolio developpeur</p>
+                <h1>Des projets full stack presentes dans une interface claire, moderne et facile a montrer.</h1>
+                <p class="hero-copy">
+                    Cette page rassemble quelques realisations avec une navigation simple,
+                    une mise en page responsive et une structure claire pour la demonstration.
+                </p>
+                <div class="hero-actions">
+                    <a class="primary-button" href="detailler-projet.html?id=3">Voir un projet mis en avant</a>
+                    <a class="secondary-button" href="ajouter-projet.html">Ajouter un projet</a>
+                </div>
+            </div>
+
+            <div class="hero-highlight">
+                <p class="hero-highlight-label">Projet en focus</p>
+                <h2>Dashboard equipe</h2>
+                <p>
+                    Interface de suivi, taches partagees, priorites visibles et
+                    experience fluide pour presenter une vraie logique produit.
+                </p>
+                <ul class="hero-metrics">
+                    <li><strong>3</strong><span>pages principales</span></li>
+                    <li><strong>100%</strong><span>responsive</span></li>
+                    <li><strong>1</strong><span>navigation commune</span></li>
+                </ul>
+            </div>
         </section>
 
         <section class="panel">
@@ -50,7 +70,10 @@
                         <p class="project-tag">HTML · CSS · JavaScript</p>
                         <h3>Site E-commerce</h3>
                         <p>Une vitrine moderne avec catalogue, panier et navigation rapide.</p>
-                        <a class="card-link" href="detailler-projet.html?id=1">Voir le detail</a>
+                        <div class="project-card-footer">
+                            <span class="project-status">Disponible</span>
+                            <a class="card-link" href="detailler-projet.html?id=1">Voir le detail</a>
+                        </div>
                     </div>
                 </article>
 
@@ -60,7 +83,10 @@
                         <p class="project-tag">API · JavaScript · UI</p>
                         <h3>Application meteo</h3>
                         <p>Une interface legere pour consulter la meteo et les tendances de la semaine.</p>
-                        <a class="card-link" href="detailler-projet.html?id=2">Voir le detail</a>
+                        <div class="project-card-footer">
+                            <span class="project-status">Prototype</span>
+                            <a class="card-link" href="detailler-projet.html?id=2">Voir le detail</a>
+                        </div>
                     </div>
                 </article>
 
@@ -70,7 +96,10 @@
                         <p class="project-tag">Node.js · Express · MongoDB</p>
                         <h3>Dashboard equipe</h3>
                         <p>Un espace de suivi pour centraliser les taches et les indicateurs importants.</p>
-                        <a class="card-link" href="detailler-projet.html?id=3">Voir le detail</a>
+                        <div class="project-card-footer">
+                            <span class="project-status">Projet cle</span>
+                            <a class="card-link" href="detailler-projet.html?id=3">Voir le detail</a>
+                        </div>
                     </div>
                 </article>
             </div>

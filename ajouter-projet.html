@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="wrapper header-layout">
-            <a class="brand" href="index.html">Mon Portfolio</a>
-            <nav class="site-nav" aria-label="Navigation principale">
+    <header class="site-topbar">
+        <div class="wrapper topbar-layout">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">MP</span>
+                <span class="brand-title">Mon Portfolio</span>
+            </a>
+            <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a class="is-current" href="ajouter-projet.html">Ajouter un projet</a></li>
                 </ul>
             </nav>
+            <button class="hamburger" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 

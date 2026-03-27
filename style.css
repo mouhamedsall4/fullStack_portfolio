@@ -64,3 +64,46 @@ header h1 {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -8px);
 }
+
+/* ============================================ */
+/* NAVIGATION */
+/* ============================================ */
+
+nav {
+  background-color: #34495e;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 100;
+}
+
+nav.active {
+  max-height: 300px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 20px 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid #2c3e50;
+}
+
+nav a:hover {
+  color: #3498db;
+}

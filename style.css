@@ -186,3 +186,26 @@ h2 {
   color: #2980b9;
   text-decoration: underline;
 }
+
+.projet-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  flex: 1;
+  text-align: center;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}

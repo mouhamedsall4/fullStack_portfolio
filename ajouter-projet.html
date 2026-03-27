@@ -34,7 +34,22 @@
             <p>Renseigne ici les informations principales du projet a publier dans le portfolio.</p>
         </section>
 
-        <section class="panel">
+        <section class="panel form-layout">
+            <div class="form-intro-card">
+                <p class="eyebrow">Preparation</p>
+                <h2>Ce qu il faut renseigner</h2>
+                <p>
+                    Ajoute un titre clair, une description concise, une image lisible
+                    et une stack technique facile a comprendre pendant la presentation.
+                </p>
+                <ul class="info-list">
+                    <li>Un nom de projet facile a retenir</li>
+                    <li>Une description orientee valeur et fonctionnalites</li>
+                    <li>Une image qui rend bien sur la grille d accueil</li>
+                    <li>Une stack technique precise et lisible</li>
+                </ul>
+            </div>
+
             <form class="project-form" method="post" enctype="multipart/form-data">
                 <div class="form-field">
                     <label for="title">Libelle du projet</label>
@@ -46,14 +61,16 @@
                     <textarea id="summary" name="summary" rows="6" placeholder="Decris le projet, les objectifs et les fonctionnalites principales." required></textarea>
                 </div>
 
-                <div class="form-field">
-                    <label for="image">Image du projet</label>
-                    <input id="image" name="image" type="file" accept="image/*" required>
-                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="image">Image du projet</label>
+                        <input id="image" name="image" type="file" accept="image/*" required>
+                    </div>
 
-                <div class="form-field">
-                    <label for="stack">Technologies utilisees</label>
-                    <input id="stack" name="stack" type="text" placeholder="Exemple : HTML, CSS, JavaScript, React, Node.js" required>
+                    <div class="form-field">
+                        <label for="stack">Technologies utilisees</label>
+                        <input id="stack" name="stack" type="text" placeholder="Exemple : HTML, CSS, JavaScript, React, Node.js" required>
+                    </div>
                 </div>
 
                 <button class="primary-button" type="submit">Ajouter le projet</button>

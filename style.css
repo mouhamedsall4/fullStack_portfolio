@@ -350,6 +350,33 @@ h3 {
   gap: 20px;
 }
 
+.form-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.3fr);
+  gap: 24px;
+}
+
+.form-intro-card {
+  padding: 28px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #243447 0%, #2b3d52 100%);
+  color: #ffffff;
+  display: grid;
+  gap: 16px;
+}
+
+.info-list {
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .form-field {
   display: grid;
   gap: 10px;
@@ -367,6 +394,15 @@ h3 {
   border-radius: 14px;
   font: inherit;
   background: #f8fafc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--brand-main);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.14);
+  transform: translateY(-1px);
 }
 
 .project-detail {
@@ -385,8 +421,39 @@ h3 {
   align-content: start;
 }
 
+.detail-label {
+  color: var(--brand-main);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.detail-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.detail-badges span {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--brand-strong);
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+
 .tech-list {
   padding-left: 20px;
+}
+
+.detail-note {
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0.95));
+  border: 1px solid rgba(37, 99, 235, 0.12);
 }
 
 .site-footer {
@@ -417,6 +484,7 @@ h3 {
   }
 
   .hero,
+  .form-layout,
   .project-grid,
   .project-detail {
     grid-template-columns: 1fr;
@@ -462,6 +530,7 @@ h3 {
   }
 
   .project-card-footer,
+  .detail-badges,
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
@@ -474,6 +543,10 @@ h3 {
   }
 
   .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
     grid-template-columns: 1fr;
   }
 }

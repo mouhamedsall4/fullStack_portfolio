@@ -3,99 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ajouter un Projet</title>
+    <title>Mon Portfolio - Ajouter un projet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-topbar">
-        <a class="brand" href="index.html">
-            <span class="brand-title">Mon Portfolio</span>
-        </a>
-
-        <nav id="site-nav" class="site-nav">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a class="is-current" href="ajouter-projet.html">Ajouter un projet</a></li>
-            </ul>
-        </nav>
-
-        <button class="hamburger" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <header class="site-header">
+        <div class="wrapper header-layout">
+            <a class="brand" href="index.html">Mon Portfolio</a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a class="is-current" href="ajouter-projet.html">Ajouter un projet</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="container">
-            <h2>Ajouter un Nouveau Projet</h2>
+    <main class="wrapper">
+        <section class="page-intro">
+            <p class="eyebrow">Nouveau contenu</p>
+            <h1>Ajouter un nouveau projet</h1>
+            <p>Renseigne ici les informations principales du projet a publier dans le portfolio.</p>
+        </section>
 
-            <form method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="libelle">Libelle du projet :</label>
-                    <input type="text" id="libelle" name="libelle" required placeholder="Exemple : Site E-commerce">
+        <section class="panel">
+            <form class="project-form" method="post" enctype="multipart/form-data">
+                <div class="form-field">
+                    <label for="title">Libelle du projet</label>
+                    <input id="title" name="title" type="text" placeholder="Exemple : Plateforme de reservation" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="description">Description :</label>
-                    <textarea id="description" name="description" required placeholder="Decrivez votre projet en detail..."></textarea>
+                <div class="form-field">
+                    <label for="summary">Description</label>
+                    <textarea id="summary" name="summary" rows="6" placeholder="Decris le projet, les objectifs et les fonctionnalites principales." required></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label for="image">Image du projet :</label>
-                    <input type="file" id="image" name="image" accept="image/*" required>
+                <div class="form-field">
+                    <label for="image">Image du projet</label>
+                    <input id="image" name="image" type="file" accept="image/*" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="technologies">Technologies utilisees :</label>
-                    <textarea id="technologies" name="technologies" required placeholder="Exemple : HTML, CSS, JavaScript, React, Express, MongoDB"></textarea>
+                <div class="form-field">
+                    <label for="stack">Technologies utilisees</label>
+                    <input id="stack" name="stack" type="text" placeholder="Exemple : HTML, CSS, JavaScript, React, Node.js" required>
                 </div>
 
-                <div class="form-group">
-                    <button type="submit" class="btn-submit">Ajouter le projet</button>
-                </div>
+                <button class="primary-button" type="submit">Ajouter le projet</button>
             </form>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>A propos</h3>
-                <p>Bienvenue sur mon portfolio. Je suis passionne par le developpement web et les technologies modernes.</p>
-                <div class="social-links">
-                    <a href="https://github.com" title="GitHub">GitHub</a>
-                    <a href="https://linkedin.com" title="LinkedIn">LinkedIn</a>
-                    <a href="https://twitter.com" title="Twitter">Twitter</a>
-                    <a href="mailto:dev@portfolio.com" title="Email">Email</a>
-                </div>
+    <footer class="site-footer">
+        <div class="wrapper footer-layout">
+            <div>
+                <h2>Mon Portfolio</h2>
+                <p>Projet de demonstration full stack avec pages HTML, CSS et JavaScript.</p>
             </div>
-
-            <div class="footer-section">
-                <h3>Technologies</h3>
-                <p>Mon stack de developpement :</p>
-                <div class="technologies-logos">
-                    <div class="tech-logo">HTML</div>
-                    <div class="tech-logo">CSS</div>
-                    <div class="tech-logo">JS</div>
-                    <div class="tech-logo">React</div>
-                    <div class="tech-logo">Node</div>
-                    <div class="tech-logo">DB</div>
-                </div>
+            <div>
+                <h2>Navigation</h2>
+                <a href="index.html">Accueil</a>
+                <a href="ajouter-projet.html">Ajouter un projet</a>
             </div>
-
-            <div class="footer-section">
-                <h3>Liens rapides</h3>
-                <a href="index.html">Mes Projets</a>
-                <a href="ajouter-projet.html">Ajouter un Projet</a>
-                <a href="#contact">Me contacter</a>
-                <a href="#mentions">Mentions legales</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mon Portfolio. Tous les droits reserves.</p>
-            <p>Cree avec HTML, CSS et passion.</p>
         </div>
     </footer>
 

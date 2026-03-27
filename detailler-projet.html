@@ -3,116 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Detail Projet</title>
+    <title>Mon Portfolio - Detail du projet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-topbar">
-        <a class="brand" href="index.html">
-            <span class="brand-title">Mon Portfolio</span>
-        </a>
-
-        <nav id="site-nav" class="site-nav">
-            <ul>
-                <li><a class="is-current" href="index.html">Accueil</a></li>
-                <li><a href="ajouter-projet.html">Ajouter un projet</a></li>
-            </ul>
-        </nav>
-
-        <button class="hamburger" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <header class="site-header">
+        <div class="wrapper header-layout">
+            <a class="brand" href="index.html">Mon Portfolio</a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="ajouter-projet.html">Ajouter un projet</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="container">
-            <h2>Detail du Projet</h2>
+    <main class="wrapper">
+        <section class="page-intro">
+            <p class="eyebrow">Fiche projet</p>
+            <h1>Dashboard equipe</h1>
+            <p>Une page de detail concise pour presenter le contexte, les objectifs et la stack technique.</p>
+        </section>
 
-            <div class="projet-detail">
-                <img src="https://via.placeholder.com/400x300?text=Site+E-commerce" alt="Site E-commerce">
-
-                <div class="projet-info">
-                    <h3>Site E-commerce</h3>
-
-                    <strong>Description :</strong>
-                    <p>
-                        Un site de commerce electronique complet permettant aux utilisateurs de parcourir un catalogue
-                        de produits, d'ajouter des articles a leur panier et de proceder au paiement.
-                        Le site dispose d'un systeme d'authentification, d'une gestion des commandes et d'un
-                        tableau de bord administrateur.
-                    </p>
-
-                    <div class="technologies">
-                        <strong>Technologies utilisees :</strong>
-                        <ol>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React JS</li>
-                            <li>Express JS</li>
-                            <li>MongoDB</li>
-                            <li>Stripe API</li>
-                        </ol>
-                    </div>
-
-                    <strong>Fonctionnalites :</strong>
-                    <p>
-                        Authentification utilisateur<br>
-                        Catalogue de produits<br>
-                        Panier d'achat<br>
-                        Systeme de paiement<br>
-                        Gestion des commandes<br>
-                        Dashboard administrateur
-                    </p>
-
-                    <div class="liens-action">
-                        <a href="index.html" class="btn-retour">Retour a la liste</a>
-                    </div>
-                </div>
+        <section class="panel project-detail">
+            <div class="detail-media">
+                <img src="https://via.placeholder.com/900x620?text=Dashboard+Equipe" alt="Apercu du projet Dashboard equipe">
             </div>
-        </div>
+            <div class="detail-content">
+                <h2>Description</h2>
+                <p>
+                    Ce projet centralise les taches, les priorites et les informations utiles pour une equipe
+                    de developpement. L interface met en avant la lisibilite et la rapidite d acces.
+                </p>
+
+                <h2>Technologies</h2>
+                <ul class="tech-list">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <a class="secondary-button" href="index.html">Retour a l accueil</a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>A propos</h3>
-                <p>Bienvenue sur mon portfolio. Je suis passionne par le developpement web et les technologies modernes.</p>
-                <div class="social-links">
-                    <a href="https://github.com" title="GitHub">GitHub</a>
-                    <a href="https://linkedin.com" title="LinkedIn">LinkedIn</a>
-                    <a href="https://twitter.com" title="Twitter">Twitter</a>
-                    <a href="mailto:dev@portfolio.com" title="Email">Email</a>
-                </div>
+    <footer class="site-footer">
+        <div class="wrapper footer-layout">
+            <div>
+                <h2>Mon Portfolio</h2>
+                <p>Projet de demonstration full stack avec pages HTML, CSS et JavaScript.</p>
             </div>
-
-            <div class="footer-section">
-                <h3>Technologies</h3>
-                <p>Mon stack de developpement :</p>
-                <div class="technologies-logos">
-                    <div class="tech-logo">HTML</div>
-                    <div class="tech-logo">CSS</div>
-                    <div class="tech-logo">JS</div>
-                    <div class="tech-logo">React</div>
-                    <div class="tech-logo">Node</div>
-                    <div class="tech-logo">DB</div>
-                </div>
+            <div>
+                <h2>Navigation</h2>
+                <a href="index.html">Accueil</a>
+                <a href="ajouter-projet.html">Ajouter un projet</a>
             </div>
-
-            <div class="footer-section">
-                <h3>Liens rapides</h3>
-                <a href="index.html">Mes Projets</a>
-                <a href="ajouter-projet.html">Ajouter un Projet</a>
-                <a href="#contact">Me contacter</a>
-                <a href="#mentions">Mentions legales</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mon Portfolio. Tous les droits reserves.</p>
-            <p>Cree avec HTML, CSS et passion.</p>
         </div>
     </footer>
 

@@ -521,7 +521,7 @@ footer {
 /* DESIGN RESPONSIVE */
 /* ============================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   body {
     padding-top: 84px;
   }
@@ -597,7 +597,7 @@ footer {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 961px) {
   .site-nav {
     display: block !important;
     max-height: none !important;

@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector(".site-nav");
+  const mobileQuery = window.matchMedia("(max-width: 960px)");
 
   if (!hamburger || !nav) {
     return;
   }
 
   const isMobile = function() {
-    return window.innerWidth <= 768;
+    return mobileQuery.matches;
   };
 
   const setMenuState = function(isOpen) {

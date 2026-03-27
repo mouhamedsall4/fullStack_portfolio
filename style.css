@@ -209,3 +209,40 @@ h2 {
 .btn-delete:hover {
   background-color: #c0392b;
 }
+
+/* ============================================ */
+/* DÉTAIL DU PROJET */
+/* ============================================ */
+
+.projet-detail {
+  display: flex;
+  gap: 30px;
+}
+
+.projet-detail img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projet-info {
+  flex: 1;
+}
+
+.projet-info h2 {
+  margin-top: 0;
+}
+
+.projet-info p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.projet-info strong {
+  color: #2c3e50;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}

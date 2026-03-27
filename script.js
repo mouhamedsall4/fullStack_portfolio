@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector(".site-nav");
-  const mobileQuery = window.matchMedia("(max-width: 900px)");
+  const mobileQuery = window.matchMedia("(max-width: 1100px)");
 
   document.querySelectorAll(".site-nav a").forEach(function(link) {
     const href = link.getAttribute("href");
